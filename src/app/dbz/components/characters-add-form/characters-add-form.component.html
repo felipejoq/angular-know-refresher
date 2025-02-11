@@ -1,0 +1,38 @@
+<form class="flex flex-col" (submit)="emitCharacter($event)">
+  <h4 class="font-bold text-lg">
+    Add Character
+  </h4>
+  <div class="mt-4">
+    <label for="name" class="block">
+      Name
+    </label>
+    <input
+      [(ngModel)]="character.name"
+      type="text"
+      autocomplete="off"
+      id="name"
+      name="name"
+      class="w-full border-1 border-gray-300 rounded p-2"
+    />
+  </div>
+  <div class="mt-4">
+    <label for="power" class="block">
+      Power
+    </label>
+    <input
+      [(ngModel)]="character.power"
+      type="number"
+      autocomplete="off"
+      id="power"
+      name="power"
+      class="w-full border-1 border-gray-300 rounded p-2"
+    />
+  </div>
+  <div class="mt-4">
+    <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-400 cursor-pointer">
+      + Add Character
+    </button>
+  </div>
+</form>
+
+<!--<pre>{{ character | json }}</pre>-->
