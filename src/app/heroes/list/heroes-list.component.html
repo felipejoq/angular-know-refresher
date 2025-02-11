@@ -1,0 +1,25 @@
+<h3>Heroes List</h3>
+<hr />
+<p *ngIf="lastHeroRemoved && heroes.length > 0; else noHeroesRemoved">
+  Último héroe eliminado: {{ lastHeroRemoved }}
+</p>
+
+<ng-template #noHeroesRemoved>
+  No se ha borrado ningún héroe
+</ng-template>
+
+<ul>
+  <li *ngFor="let hero of heroes">
+    {{ hero }}
+  </li>
+</ul>
+
+<button *ngIf="hideButton" (click)="removeFirstHero()">
+  Remove first hero
+</button>
+<button (click)="reset()">
+  Reset
+</button>
+<button *ngIf="hideButton" (click)="removeLastHero()">
+  Remove last heroes
+</button>
