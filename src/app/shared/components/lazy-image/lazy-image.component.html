@@ -1,0 +1,14 @@
+<img
+  [src]="src"
+  [alt]="alt"
+  class="w-full object-contain rounded fade-in"
+  (load)="onLoad()"
+  [ngStyle]="{ 'display': hasLoaded ? 'block' : 'none' }"
+>
+
+<img
+  *ngIf="!hasLoaded"
+  src="/loader.svg"
+  alt="Loading..."
+  class="object-contain rounded w-36 h-36 mx-auto"
+>

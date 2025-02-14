@@ -1,0 +1,13 @@
+<shared-lazy-image
+  [src]="gif.images.downsized_medium.url"
+  [alt]="gif.title || 'No title'"
+  class="relative w-full"
+></shared-lazy-image>
+<div class="p-4">
+  <h4 class="text-lg font-bold text-white">
+    {{ gif.title || 'No title' }}
+  </h4>
+  <p class="text-sm text-gray-400">
+    {{ gif.username }}
+  </p>
+</div>

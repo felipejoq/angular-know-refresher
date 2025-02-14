@@ -3,22 +3,10 @@
   <h3 class="text-lg font-bold">Resultados</h3>
   <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
     <!-- card -->
-    <div *ngFor="let gif of gifs" class="bg-white shadow-md rounded p-2 break-inside-avoid">
-      <div class="relative w-full">
-        <img
-          [src]="gif.images.original.url"
-          [alt]="gif.alt_text"
-          class="w-full object-contain rounded"
-        >
-      </div>
-      <div class="p-4">
-        <h4 class="text-lg font-bold">
-          {{ gif.title }}
-        </h4>
-        <p class="text-sm text-gray-400">
-          {{ gif.username }}
-        </p>
-      </div>
-    </div>
+    <gifs-show-card
+      *ngFor="let gif of gifs"
+      [gif]="gif"
+      class="shadow-md rounded p-2 break-inside-avoid bg-gray-600"
+    ></gifs-show-card>
   </div>
 </div>

@@ -10,7 +10,7 @@ export class GifsService {
   private _tagsHistory: string[] = [];
   private _gifList: Gif[] = [];
 
-  private apiKey: string = '{{YOUR_API_KEY}}';
+  private apiKey: string = 'ORAVgiaxBJc6jnDXtcHTzlZzFuShJPMr';
   private baseUrl: string = 'https://api.giphy.com/v1/gifs';
   private limit: number = 10;
 

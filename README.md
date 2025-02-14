@@ -10,5 +10,6 @@ Este proyecto es una aplicación de Angular que se utiliza para repasar concepto
 ## Uso de HttpClient
 
 - Uso de HttpClient para realizar peticiones a una API REST, manejo de errores, uso de interceptores, etc.
+- Manejando eventos de imagen para agregar un loader mientras la imagen se carga por completa.
 
 ... continuará
